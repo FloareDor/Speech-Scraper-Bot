@@ -78,6 +78,12 @@ while True:
                 final_Link = arr2[0]
                 webbrowser.open(final_Link)
                 #webbrowser.open(f"https://www.youtube.com/results?search_query={new_text}")
+            if "type" in text:
+                new_text = text
+                new_text = new_text.replace("type ", "")
+                keyboard = Controller()
+                keyboard.type(new_text)
+                
     except sr.UnknownValueError():
         recognizer = sr.Recognizer()
         pass
