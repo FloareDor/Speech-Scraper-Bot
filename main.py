@@ -71,8 +71,8 @@ while True:
                 new_text = text
                 new_text = new_text.replace("on", "")
                 new_text = new_text.replace("youtube", "")
-                new_text = new_text.replace("play", "")
-                videosSearch = VideosSearch(new_text, limit = 1)
+                new_text2 = new_text.spit("play")[1]
+                videosSearch = VideosSearch(new_text2, limit = 1)
                 arr = str(videosSearch.result()).split("'link': '")
                 arr2 = arr[2].split("', 'shelfTitle")
                 final_Link = arr2[0]
