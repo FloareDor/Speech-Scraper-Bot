@@ -1,0 +1,8 @@
+beautifulsoup4==4.10.0
+googletrans==3.1.0a0
+gTTS==2.2.2
+pynput==1.7.3
+pyttsx3==2.90
+requests==2.25.1
+SpeechRecognition==3.8.1
+youtube_search_python==1.4.5
